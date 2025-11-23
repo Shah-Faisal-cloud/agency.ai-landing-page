@@ -36,12 +36,12 @@ const Header = ({ theme, setTheme }) => {
             </a>
           </li>
           <li onClick={() => setIsSidebarOpen(false)}>
-            <a href="#our_work" className="bb-hover">
+            <a href="#our-work" className="bb-hover">
               Our Work
             </a>
           </li>
           <li onClick={() => setIsSidebarOpen(false)}>
-            <a href="#contact" className="bb-hover">
+            <a href="#contact-us" className="bb-hover">
               Contact Us
             </a>
           </li>
