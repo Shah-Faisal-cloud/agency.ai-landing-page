@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@import "tailwindcss";
+
+* {
+  font-family: "Manrope";
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .bb-hover {
+    position: relative;
+  }
+
+  .bb-hover::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: all 0.5s ease;
+  }
+
+  .bb-hover:hover::after {
+    width: 90%;
+  }
+
+  .dark .bb-hover::after{
+    background-color: white;
+  }
+}
+
+@theme {
+  --color-primary: #5044e5;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
