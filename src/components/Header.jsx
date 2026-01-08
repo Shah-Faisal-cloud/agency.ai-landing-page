@@ -15,7 +15,7 @@ const Header = ({ theme, setTheme }) => {
     }, [theme])
 
   return (
-    <header className="flex justify-between items-center px-4 md:px-16 lg:px-24 xl:px-40 sticky top-0 py-4 z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900">
+    <header className="flex justify-between border-b border-gray-200 dark:border-neutral-800 items-center px-4 md:px-16 lg:px-24 xl:px-40 sticky top-0 py-4 z-20 backdrop-blur-xl font-medium bg-gray-50 dark:bg-gray-900">
       <a href="#">
         <img
           src={theme === "dark" ? assets.logo_dark : assets.logo}
@@ -23,7 +23,7 @@ const Header = ({ theme, setTheme }) => {
           className="w-32 sm:w-40"
         />
       </a>
-      <nav className={`absolute right-8 max-md:bg-gray-100/95 max-md:dark:bg-gray-800/90 max-md:rounded-2xl backdrop-blur-xl max-md:px-12 max-md:py-10 max-md:shadow-[0_4px_30px_rgba(0,0,0,0.1)] md:opacity-100 md:pointer-events-auto -bottom-60 md:static ${isSidebarOpen ? 'opacity-100 pointer-events-auto' : 'max-md:opacity-0 max-md:pointer-events-none'}`}>
+      <nav className={`absolute right-8 max-md:bg-gray-200/95 max-md:dark:bg-gray-800/95 max-md:rounded-2xl max-md:backdrop-blur-xl max-md:px-12 max-md:py-10 max-md:shadow-[0_4px_30px_rgba(0,0,0,0.1)] md:opacity-100 md:pointer-events-auto -bottom-60 md:static ${isSidebarOpen ? 'opacity-100 pointer-events-auto' : 'max-md:opacity-0 max-md:pointer-events-none'}`}>
         <ul className="flex gap-5 md:text-sm text-gray-700 dark:text-white max-md:flex-col ">
           <li onClick={() => setIsSidebarOpen(false)}>
             <a href="#" className="bb-hover">
