@@ -23,7 +23,7 @@ const Header = ({ theme, setTheme }) => {
           className="w-32 sm:w-40"
         />
       </a>
-      <nav className={`absolute right-8 max-md:bg-gray-200/95 max-md:dark:bg-gray-800/95 max-md:rounded-2xl max-md:backdrop-blur-xl max-md:px-12 max-md:py-10 max-md:shadow-[0_4px_30px_rgba(0,0,0,0.1)] md:opacity-100 md:pointer-events-auto -bottom-60 md:static ${isSidebarOpen ? 'opacity-100 pointer-events-auto' : 'max-md:opacity-0 max-md:pointer-events-none'}`}>
+      <nav className={`fixed right-8 max-md:bg-gray-200/95 max-md:dark:bg-gray-800/95 max-md:rounded-2xl max-md:backdrop-blur-xl max-md:px-12 max-md:py-10 max-md:shadow-[0_4px_30px_rgba(0,0,0,0.1)] md:opacity-100 md:pointer-events-auto max-md:top-full md:static ${isSidebarOpen ? 'opacity-100 pointer-events-auto' : 'max-md:opacity-0 max-md:pointer-events-none'}`}>
         <ul className="flex gap-5 md:text-sm text-gray-700 dark:text-white max-md:flex-col ">
           <li onClick={() => setIsSidebarOpen(false)}>
             <a href="#" className="bb-hover">
